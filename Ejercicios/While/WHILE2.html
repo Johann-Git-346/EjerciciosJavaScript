@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero=parseInt(prompt("ingrese un numero: "));
+        let numeros=0;
+        let sumaPar=0;
+        let sumaImpar=0;
+
+        while(numeros<numero){
+            numeros=numeros+1;
+            if(numeros%2==0){
+                sumaPar+=numeros;
+            }else{
+                sumaImpar+=numeros;
+            }
+        }
+        console.log(sumaPar)
+        console.log(sumaImpar)
+    </script>
+</body>
+</html>

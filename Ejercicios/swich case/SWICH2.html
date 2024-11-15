@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero1=parseFloat(prompt("ingrese un numero: "));
+        let numero2=parseFloat(prompt("ingrese un numero: "));
+        let operador=prompt("ingrese un operador (+,-,*,/): ");
+        let resultado;
+
+        switch(operador){
+            case "+":
+                resultado=numero1+numero2;
+                break;
+            case "-":
+                resultado=numero1-numero2;
+                break;
+            case "*":
+                resultado=numero1*numero2;
+                break;
+            case "/":
+                if (numero2!==0){
+                    resultado=numero1/numero2;   
+                }else{
+                    resultado="Error:no se puede ralizar division por 0";
+                }
+                break
+            default:
+                resultado="error: ingrese un operador aritmetico correcto y/o numeros validos";
+                break;
+        }
+        console.log("el resultado es: "+resultado);
+    </script>
+</body>
+</html>

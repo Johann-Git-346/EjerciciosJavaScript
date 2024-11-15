@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota=parseFloat(prompt("ingrese su nota(1 al 100): "));
+        let categoria;
+
+        if(nota>=1 && nota<=20){
+            categoria="F";
+        }else if(nota>20 && nota<=40){
+            categoria="E";
+        }else if(nota>40 && nota<=60){
+            categoria="D";
+        }else if(nota>60 && nota<=80){
+            categoria="C";
+        }else if(nota>80 && nota<=90){
+            categoria="B";
+        }else if(nota>90 && nota<=100){
+            categoria="A";
+        }else{
+            categoria="Error: ingrese una nota valida";
+        }
+
+        switch(categoria){
+            case "A":
+                console.log("su clasificacion es: "+categoria);
+                break;
+            case "B":
+                console.log("su clasificacion es: "+categoria);
+                break;
+            case "C":
+                console.log("su clasificacion es: "+categoria);
+                break;
+            case "D":
+                console.log("su clasificacion es: "+categoria);
+                break;
+            case "E":
+                console.log("su clasificacion es: "+categoria);
+                break;
+            case "F":
+                console.log("su clasificacion es: "+categoria);
+                break;
+            default:
+                console.log("Error: no ha ingresado una nota valida");
+                break;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let temperatura="";
+        let estable="";
+
+        do{
+            temperatura=parseFloat(prompt("ingrese la temperatura: "));
+            if (temperatura<18){
+                console.log("temperatura inaceptable");
+                estable="no";
+            }else if (temperatura>26){
+                console.log("temperatura inaceptable");
+                estable="no";
+            }else{
+                console.log("temperatura aceptable");
+                estable="si";
+            }
+        }while(estable=="no");
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let desicion="";
+        let nota="";
+        let suma=0;
+        let promedio=0;
+        let contador=0;
+        let final="";
+
+        do{
+            nota=parseFloat(prompt("ingrese sus notas: "));
+            suma+=nota;
+            contador+=1;
+            promedio=suma/contador;
+            desicion=parseInt(prompt("desea ingresar mas notas? (1.si o 2.no)"));
+        }while(desicion==1)
+        if(promedio<3){
+            final="Reprobado";
+        }else{
+            final="Aprobado";
+        }
+        console.log(`suma de todas las notas ${suma}`);
+        console.log(`promedio de notas ${promedio}`);
+        console.log("nota final: "+final);
+    </script>
+</body>
+</html>
